@@ -13,20 +13,20 @@ module.exports = {
     },
     
     nueva : (req,res) => {
-        db.Pelicula,findAll({
+        db.Pelicula.findAll({
             order : [
-                ['relase_date','DESC']
+                ['release_date','DESC']
             ],
             limit : 5
         })
-            .then(movies => res.render('newesMovires', {
+            .then(movies => res.render('newestMovies', {
                 movies
             }))
             .catch(e=> console.log(e))
     },
 
     recommended : (req,res) => {
-        db.Pelicula.FindAll({
+        db.Pelicula.findAll({
             where : {
                 awards : {
                     [Op.gte] : 8
