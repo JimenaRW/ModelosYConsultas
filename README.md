@@ -7,6 +7,6 @@ Primera implementación a los templates.
 Consideraciones del proyecto:
 
 + Utilización de package dotenv.
-utilizadas para la conexión a la base de datos. Hay un archivo de guía.
+Utilizadas para la conexión a la base de datos. Hay un archivo de guía.
 
 + Correr servidor a través de terminal utilizando el comando "nodemon src/app"
